@@ -21,8 +21,9 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-md md:text-lg text-justify md:text-center inline-grid text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-          I'm Arun, a React Developer with 4 years of experience. I specialize in building dynamic and scalable web applications. Passionate about crafting seamless user experiences, I am ready to take on any development challenge.
-     </p>
+       4+ years of experience in full-stack development, delivering responsive web applications.
+
+Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, and Node.js.    </p>
 
           <div className="pt-4 opacity-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-18 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
