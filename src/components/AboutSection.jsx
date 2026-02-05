@@ -98,12 +98,13 @@ export const AboutSection = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold animate-fade-in">
-             Front-End Developer (React Js)
+             Full Stack Developer
             </h3>
 
             <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-1">
-            4 + years of experience in front-end development, delivering responsive and high-performing web applications. Skilled in HTML, CSS, JavaScript, ReactJS & Next.js Knowledge of CMS
-            </p>
+          4+ years of experience in full-stack development, delivering responsive web applications.
+
+Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, and Node.js.    </p>
 
             <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-2">
           platforms and SEO optimization Familiar with Agile methodologies and team collaboration
@@ -114,7 +115,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="https://www.canva.com/design/DAGPZ28zKoU/-FySt1oYRIb9efY192ZrRw/view"
+                href="https://www.canva.com/design/DAHAX_cmOzA/g0j150ADufWOOv8G2qp4Hg/edit?utm_content=DAHAX_cmOzA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4"
