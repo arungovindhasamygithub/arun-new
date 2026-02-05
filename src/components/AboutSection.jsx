@@ -106,9 +106,7 @@ export const AboutSection = () => {
 
 Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, and Node.js.    </p>
 
-            <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-2">
-          platforms and SEO optimization Familiar with Agile methodologies and team collaboration
-            </p>
+          
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-3">
               <a href="#contact" className="cosmic-button">
