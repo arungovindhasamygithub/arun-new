@@ -20,10 +20,9 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-md md:text-lg text-justify md:text-center inline-grid text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-       4+ years of experience in full-stack development, delivering responsive web applications.
-
-Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, and Node.js.    </p>
+          <p className="text-md md:text-lg text-justify md:text-center inline-grid text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            I'm a Full-Stack Developer, Workshop Trainer, and AI & Automation Strategist with 6+ years of experience. As the COO of Inovate Solution Technology, I specialize in building scalable web solutions and delivering hands-on tech workshops to empower the next generation of developers.
+          </p>
 
           <div className="pt-4 opacity-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-18 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
@@ -31,8 +30,8 @@ Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, a
             </a>
             <a href="#services" 
                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4">
-                Get Our Services
-               </a>
+               Get Our Services
+            </a>
           </div>
         </div>
       </div>
