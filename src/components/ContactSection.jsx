@@ -1,5 +1,4 @@
 import {
-  Github,
   Instagram,
   Linkedin,
   Mail,
@@ -181,13 +180,6 @@ export const ContactSection = () => {
                   rel="noopener noreferrer"
                 >
                   <Instagram className="h-5 w-5 hover:text-primary" />
-                </a>
-                <a
-                  href="https://github.com/arungovindhasamygithub?tab=repositories"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="h-5 w-5 hover:text-primary" />
                 </a>
                 <a
                   href="https://in.pinterest.com/arungwork63/icons"
