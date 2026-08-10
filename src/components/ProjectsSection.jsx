@@ -1,156 +1,139 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "Firstchoice Supplies",
+    title: "Robotics & AI Academy - Otomatiks",
     description:
-      "Corporate website developed with Next.js and Tailwind CSS. Focused on server-side rendering, performance optimization, and SEO.",
-    image: "/projects/firstchoice.png",
-    tags: ["Next.js", "Tailwind CSS", "AppScript", "SEO", "JavaScript"],
-    demoUrl: "https://www.firstchoice.supplies/",
-    githubUrl: "#",
+      "Educational academy platform with advanced content management, SEO optimization, and automated workflows via Pabbly Connect.",
+    tags: ["Next.js", "Tailwind CSS", "Google App Script", "Contentful CMS", "Pabbly Connect", "SEO"],
+    demoUrl: "https://www.otomatiks.com",
   },
   {
     id: 2,
-    title: "Otomatiks (Robotics & AI Academy)",
+    title: "Corporate Website - Firstchoice Supplies",
     description:
-      "Educational academy website built with Next.js, Tailwind CSS, Contentful CMS, and App Script. Automated enquiries with Pabbly Connect.",
-    image: "/projects/otomatiks.png",
-    tags: ["Next.js", "Tailwind CSS", "Contentful CMS", "AppScript", "SEO"],
-    demoUrl: "https://otomatiks.com/",
-    githubUrl: "#",
+      "Corporate B2B website optimized for high performance, server-side rendering, and a seamless user experience.",
+    tags: ["Next.js", "Tailwind CSS", "Google App Script"],
+    demoUrl: "https://www.firstchoice.supplies",
   },
   {
     id: 3,
-    title: "Robotica 2025",
+    title: "Library and Organization - Book Buddy",
     description:
-      "Event website built with React.js and Bootstrap. Integrated Razorpay payments, enquiry forms, and optimized for cross-device usage.",
-    image: "/projects/robotica.png",
-    tags: ["ReactJS", "Bootstrap", "JavaScript", "AppScript", "Razorpay"],
-    demoUrl: "https://www.robotica.org.in/",
-    githubUrl: "#",
+      "Comprehensive library organization platform featuring secure user-based authentication and scalable cloud storage.",
+    tags: ["Django", "Cloudinary", "Render", "Admin Panel (CMS)", "Auth"],
+    demoUrl: "https://www.book-buddy.in",
   },
   {
     id: 4,
-    title: "Aishwarya Academy",
+    title: "Robotica Event - Otomatiks",
     description:
-      "Coaching centre website developed using React.js and Bootstrap with Contentful CMS for course management and AppScript for automation.",
-    image: "/projects/aishwarya.png",
-    tags: ["ReactJS", "Bootstrap", "Contentful CMS", "AppScript"],
-    demoUrl: "https://aishwaryaacademy.in/",
-    githubUrl: "#",
+      "Custom event evaluation platform built with a robust Python backend, user authentication, and full admin panel control.",
+    tags: ["Flask", "Python", "Auth", "Admin Panel (CMS)", "Neon"],
+    demoUrl: "https://www.arun-evaluation.vercel.app",
   },
   {
     id: 5,
-    title: "QBee Academy",
+    title: "FlipBook - Book Buddy",
     description:
-      "E-learning platform developed with React.js and Bootstrap. Integrated Contentful CMS for course updates and SEO optimization.",
-    image: "/projects/qbee.png",
-    tags: ["ReactJS", "Bootstrap", "Contentful CMS", "SEO"],
-    demoUrl: "https://qbeeacademy.in/",
-    githubUrl: "#",
+      "Full-stack web application for managing and displaying digital flipbooks, integrated with blob storage for media handling.",
+    tags: ["Node.js", "Python", "Blob Storage", "Neon", "Vercel"],
+    demoUrl: "https://www.flip-book-frontend.vercel.app",
   },
   {
     id: 6,
-    title: "SK Kids Play School",
+    title: "Event - Robotica 2026",
     description:
-      "Play school website with HTML5, CSS3, Bootstrap. Designed a child-friendly interface with programs, gallery, and admissions sections.",
-    image: "/projects/skkids.png",
-    tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "SEO"],
-    demoUrl: "https://www.skkidsplayschool.com/",
-    githubUrl: "#",
+      "Interactive and responsive event website designed for fast loading and cross-device compatibility.",
+    tags: ["HTML", "CSS", "JS", "Tailwind CSS", "Google App Script"],
+    demoUrl: "https://www.robotica.org.in",
   },
   {
     id: 7,
-    title: "Shanthosh Vidyalaya School",
+    title: "Academy - Qbee Academy",
     description:
-      "School website designed with modern responsive UI, showcasing programs, gallery, and admissions info.",
-    image: "/projects/shanthosh.png",
-    tags: ["ReactJS", "Bootstrap", "SEO", "JavaScript"],
-    demoUrl: "https://shanthoshvidyalaya.vercel.app/",
-    githubUrl: "#",
+      "Dynamic coaching academy platform integrated with Google App Script for automated operations and inquiries.",
+    tags: ["React.js", "Bootstrap", "Google App Script"],
+    demoUrl: "https://www.qbeeacademy.in",
   },
   {
     id: 8,
-    title: "E-Learning Platform (Full Stack - Study)",
+    title: "Play School - SK Kids",
     description:
-      "Full-stack e-learning platform for study purpose. Built with React and backend integration for dynamic courses.",
-    image: "/projects/elearning.png",
-    tags: ["ReactJS", "Full Stack", "SEO", "Bootstrap"],
-    demoUrl: "https://e-learning-steel-two.vercel.app/",
-    githubUrl: "#",
+      "Engaging and child-friendly play school interface detailing educational programs, admissions, and interactive galleries.",
+    tags: ["HTML", "CSS", "JS", "Tailwind CSS", "Google App Script"],
+    demoUrl: "https://www.skkidsplayschool.com",
   },
   {
     id: 9,
-    title: "Otomatiks Course Shop",
+    title: "E-Learning - Otomatiks",
     description:
-      "E-learning website for Otomatiks courses with online enrollments and responsive design.",
-    image: "/projects/course.png",
-    tags: ["ReactJS", "E-Learning", "JavaScript", "SEO"],
-    demoUrl: "https://www.otomatikscourse.shop/",
-    githubUrl: "#",
+      "Dedicated e-learning storefront featuring secure Clerk authentication and dynamic course enrollment capabilities.",
+    tags: ["React.js", "Bootstrap", "Clerk", "Auth"],
+    demoUrl: "https://www.otomatikscourse.shop",
   },
   {
     id: 10,
-    title: "Farming Website",
+    title: "Digital Coding Platform",
     description:
-      "Personal farming website showcasing agricultural activities and content.",
-    image: "/projects/farming.png",
-    tags: ["Next.js", "Tailwind CSS", "JavaScript"],
-    demoUrl: "https://arun-govindhasamy.vercel.app/",
-    githubUrl: "#",
+      "A digital environment for coding education, equipped with a custom admin CMS for managing curriculum and users.",
+    tags: ["Flask", "Python", "Auth", "Admin Panel (CMS)"],
+    demoUrl: "https://www.copack.online",
   },
   {
     id: 11,
-    title: "Portfolio Website",
+    title: "Event - Dreamland Entertainment",
     description:
-      "Personal portfolio website showcasing skills, projects, and contact info.",
-    image: "/projects/portfolio.png",
-    tags: ["Next.js", "Tailwind CSS", "JavaScript"],
-    demoUrl: "https://www.arungovindhasamy.life/",
-    githubUrl: "#",
+      "Event management and entertainment platform featuring secure user authentication and administrative controls.",
+    tags: ["Flask", "Python", "Auth", "Admin Panel (CMS)"],
+    demoUrl: "https://www.dreamlandentertainment.org",
   },
   {
     id: 12,
+    title: "Eco Challenge Hub",
+    description:
+      "Environment-focused platform built with robust backend authentication and content management capabilities.",
+    tags: ["Flask", "Python", "Auth", "Admin Panel (CMS)"],
+    demoUrl: "https://www.ecochallengehub.online",
+  },
+  {
+    id: 13,
+    title: "Car Service - Mech Zone",
+    description:
+      "Professional corporate web application designed to streamline automotive service operations and client bookings.",
+    tags: ["Flask", "Python", "Auth", "Admin Panel (CMS)"],
+    demoUrl: "https://www.mechzoneautomotive.shop",
+  },
+  {
+    id: 14,
     title: "Graphics Design Portfolio",
     description:
-      "A curated Pinterest portfolio showcasing graphic design works, branding, and visuals.",
-    image: "/projects/graphics.png",
-    tags: ["Design", "Branding", "UI/UX"],
-    demoUrl: "https://in.pinterest.com/arungwork63/",
-    githubUrl: "#",
+      "A curated Pinterest portfolio showcasing comprehensive graphic design works, marketing posters, and branding visuals.",
+    tags: ["Marketing Posters", "Videos", "Canva"],
+    demoUrl: "https://in.pinterest.com/arungwork63",
   },
 ];
 
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each one was carefully crafted
-          with attention to detail, performance, and user experience.
+          A selection of my recent full-stack applications, automated platforms, and corporate web solutions. Each project reflects a focus on scalable architecture and user experience.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              className="group bg-card rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col h-full border border-border/50"
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="relative group mb-4">
                   <div className="flex flex-wrap gap-2 overflow-hidden md:max-h-10 md:group-hover:max-h-40 transition-all duration-300 ease-in-out">
                     {project.tags.map((tag, index) => (
@@ -170,42 +153,24 @@ export const ProjectsSection = () => {
                   )}
                 </div>
 
-                <h3 className="text-xl font-bold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-justify text-sm mb-4">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-muted-foreground text-justify text-sm mb-6 flex-grow">
                   {project.description}
                 </p>
 
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+                <div className="flex justify-between items-center pt-4 border-t border-border/50">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300 flex items-center gap-1 text-sm font-medium"
+                  >
+                    <ExternalLink size={18} /> Live Demo
+                  </a>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            target="_blank"
-            href="https://github.com/arungovindhasamygithub?tab=repositories"
-          >
-            Check My GitHub <ArrowRight size={16} />
-          </a>
         </div>
       </div>
     </section>
