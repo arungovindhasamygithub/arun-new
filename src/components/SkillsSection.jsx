@@ -2,50 +2,56 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  // Core
+  { name: "HTML5", level: 95, category: "core" },
+  { name: "CSS3", level: 90, category: "core" },
+  { name: "JavaScript (ES6+)", level: 90, category: "core" },
+  { name: "Node.js", level: 80, category: "core" },
+  { name: "Python", level: 85, category: "core" },
+  { name: "Java", level: 75, category: "core" },
+  { name: "NPM", level: 80, category: "core" },
+
+  // Library
+  { name: "ReactJS", level: 90, category: "library" },
+  { name: "Redux", level: 75, category: "library" },
+  { name: "React Router DOM", level: 80, category: "library" },
+
+  // Framework
+  { name: "Django", level: 85, category: "framework" },
+  { name: "Flask", level: 80, category: "framework" },
+  { name: "Next.js", level: 85, category: "framework" },
+  { name: "Tailwind CSS", level: 90, category: "framework" },
+  { name: "Bootstrap", level: 85, category: "framework" },
+
+  // Automation & AI
+  { name: "n8n", level: 85, category: "automation & ai" },
+  { name: "AI App Development", level: 80, category: "automation & ai" },
+  { name: "Pabbly Connect", level: 80, category: "automation & ai" },
+
+  // Database
+  { name: "SQL", level: 80, category: "database" },
+  { name: "DynamoDB", level: 65, category: "database" },
+
   // Version Control
   { name: "Git", level: 85, category: "version control" },
   { name: "GitHub", level: 85, category: "version control" },
 
-  // Core
-  { name: "HTML5", level: 95, category: "core" },
-  { name: "CSS3", level: 85, category: "core" },
-  { name: "JavaScript", level: 90, category: "core" },
-    { name: "Node Js", level: 70, category: "core" },
-      { name: "NPM", level: 70, category: "core" },
-  { name: "Java", level: 80, category: "core" },
-  { name: "Python", level: 70, category: "core" },
-
-  // Library
-  { name: "ReactJS", level: 85, category: "library" },
-  { name: "Redux", level: 70, category: "library" },
-  { name: "React Router DOM", level: 75, category: "library" },
-
-  // Framework
-  { name: "Next.js", level: 85, category: "framework" },
-  { name: "Tailwind CSS", level: 80, category: "framework" },
-  { name: "Bootstrap", level: 80, category: "framework" },
-
-  // Database
-  { name: "SQL", level: 75, category: "database" },
-  { name: "DynamoDB", level: 60, category: "database" },
-
-  // Graphic Design / Tools
-  { name: "Canva", level: 90, category: "graphic design" },
-  { name: "Photoshop", level: 70, category: "graphic design" },
-  { name: "Curserai", level: 60, category: "graphic design" },
-  { name: "VS Code", level: 90, category: "graphic design" },
-  { name: "Pabbly Connect", level: 65, category: "graphic design" },
-  { name: "Odoo CRM", level: 70, category: "graphic design" },
+  // Tools & Other
+  { name: "SEO Optimization", level: 85, category: "tools & other" },
+  { name: "CMS Platforms", level: 85, category: "tools & other" },
+  { name: "VS Code", level: 90, category: "tools & other" },
+  { name: "Canva", level: 90, category: "tools & other" },
 ];
 
 const categories = [
   "all",
-  "version control",
   "core",
   "library",
   "framework",
+  "automation & ai",
   "database",
-  "graphic design",
+  "version control",
+  "tools & other",
 ];
 
 export const SkillsSection = () => {
@@ -68,7 +74,7 @@ export const SkillsSection = () => {
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-colors duration-300 capitalize text-sm md:text-base",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary/70 text-foreground hover:bg-secondary"
