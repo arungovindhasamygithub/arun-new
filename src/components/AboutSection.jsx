@@ -1,76 +1,57 @@
 import {
   Monitor,
-  Brush,
-  Settings,
+  Server,
   Zap,
-  Camera,
-  BookOpen,
+  Rocket,
   Users,
-  CalendarCheck,
+  Briefcase
 } from "lucide-react";
 
-
 export const AboutSection = () => {
- const DesignationData = [
-  {
-    id: 1,
-    icon: Monitor, 
-    title: "React & Next.js Website Development",
-    description:
-      "Building modern, responsive, and high-performance websites using React and Next.js to enhance user experience and scalability.",
-  },
-  {
-    id: 2,
-    icon: Brush, 
-    title: "Business Branding / Graphic Design",
-    description:
-      "Creating visually appealing logos, social media graphics, and branding materials to establish a strong business identity.",
-  },
-  {
-    id: 3,
-    icon: BookOpen, 
-    title: "Curriculum Development",
-    description:
-      "Designing structured, student-friendly curriculum content for schools and organizations focusing on hands-on learning.",
-  },
-  {
-    id: 4,
-    icon: Users, 
-    title: "Internship Training",
-    description:
-      "Offering practical, industry-aligned internship training programs to prepare students for real-world challenges.",
-  },
-  {
-    id: 5,
-    icon: CalendarCheck, 
-    title: "Event Management",
-    description:
-      "Organizing seamless and engaging events, from planning to execution, for educational, corporate, and public occasions.",
-  },
-  {
-    id: 6,
-    icon: Settings, 
-    title: "Design Engineering (Electrical AutoCAD)",
-    description:
-      "Providing precise electrical design solutions using AutoCAD to ensure efficient and safe circuit layouts for various projects.",
-  },
-  {
-    id: 7,
-    icon: Zap, 
-    title: "Electrical Services",
-    description:
-      "Expert electrical installation, maintenance, and repair services for residential, commercial, and small-scale industrial setups.",
-  },
-  {
-    id: 8,
-    icon: Camera, 
-    title: "Photography Services",
-    description:
-      "Capturing beautiful moments with professional photography services for functions, events, and natural landscapes.",
-  },
-  
-];
-
+  const DesignationData = [
+    {
+      id: 1,
+      icon: Monitor, 
+      title: "Full-Stack Web Development",
+      description:
+        "Building scalable, responsive, and high-performance interfaces using HTML, CSS, JavaScript, ReactJS, and Next.js.",
+    },
+    {
+      id: 2,
+      icon: Server, 
+      title: "Backend Development & APIs",
+      description:
+        "Developing robust backend architectures and integrating RESTful APIs using Python, Django, Flask, and Node.js.",
+    },
+    {
+      id: 3,
+      icon: Zap, 
+      title: "AI & Automation Strategy",
+      description:
+        "Leading AI-powered application development and implementing seamless workflow automations using n8n.",
+    },
+    {
+      id: 4,
+      icon: Users, 
+      title: "Technical Workshops & Training",
+      description:
+        "Conducting practical, project-driven sessions on full-stack development, live coding, and career readiness for student communities.",
+    },
+    {
+      id: 5,
+      icon: Rocket, 
+      title: "From Idea to Deployment",
+      description:
+        "Managing the complete project lifecycle—building, hosting, and shipping real-world applications across various industries.",
+    },
+    {
+      id: 6,
+      icon: Briefcase, 
+      title: "Tech Leadership & Entrepreneurship",
+      description:
+        "Driving business operations, scalable tech solutions, and industry collaborations as Chief Operating Officer.",
+    },
+  ];
 
   // Designation Card Component
   const Card = ({ icon: Icon, title, description }) => (
@@ -81,7 +62,7 @@ export const AboutSection = () => {
         </div>
         <div className="text-left">
           <h4 className="font-semibold text-md md:text-lg">{title}</h4>
-          <p className="text-muted-foreground text-justify leading-normal text-sm">{description}</p>
+          <p className="text-muted-foreground text-justify leading-normal text-sm mt-1">{description}</p>
         </div>
       </div>
     </div>
@@ -98,25 +79,26 @@ export const AboutSection = () => {
           {/* Left Content */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold animate-fade-in">
-             Full Stack Developer
+              COO & Full-Stack Developer
             </h3>
 
-            <p className="text-justify indent-10 md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-1">
-          4+ years of experience in full-stack development, delivering responsive web applications.
+            <p className="text-justify md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-1">
+              I am a technology entrepreneur and full-stack developer with over 6+ years of hands-on industry experience. Currently serving as the Chief Operating Officer at Inovate Solution Technology, I specialize in scalable web solutions, AI-powered applications, and workflow automation.
+            </p>
 
-Specialized in HTML, CSS, JavaScript, ReactJS, Next.js, Python, Django, Flask, and Node.js.    </p>
+            <p className="text-justify md:text-lg tracking-tight text-muted-foreground animate-fade-in-delay-2">
+              Beyond development, I am a passionate workshop trainer and tech speaker. I conduct practical, project-driven sessions for colleges, bridging the gap between academic theory and real-world deployment with live coding, project walkthroughs, and industry guidance.
+            </p>
 
-          
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-delay-3">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start animate-fade-in-delay-3">
               <a href="#contact" className="cosmic-button">
                 Get In Touch
               </a>
               <a
-                href="https://www.canva.com/design/DAHAX_cmOzA/g0j150ADufWOOv8G2qp4Hg/edit?utm_content=DAHAX_cmOzA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                href="https://www.canva.com/design/DAGPZ28zKoU/-FySt1oYRIb9efY192ZrRw/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 animate-fade-in-delay-4 text-center"
               >
                 Download CV
               </a>
